@@ -85,6 +85,16 @@ blockquote p {
   padding: 0px;
 }
 
+.booyah-box03 {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 0px;
+}
+
 .pindex {
   position:relative;
   max-height: 20%;
@@ -93,15 +103,20 @@ blockquote p {
 
 
 .indexpic {
-
+ height: 200px;
 }
 
 .text-block {
   position: absolute;
   bottom: 20px;
-  right: 20px;
+  right: auto;
+  left: auto;
   background-color: black;
   color: white;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.placepic {
+  width: 50%;
 }
