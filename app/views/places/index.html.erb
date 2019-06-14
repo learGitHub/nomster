@@ -4,32 +4,25 @@
      <i><%= place.address %></i><br />
      <p><%= place.description %></p><br />
 
-    <% if place.photos.present? %>
-      <div class="pindex">
-       <%= image_tag place.photos.last.picture.url.to_s, class: "indexpic" %>
-       <div class="text-block">
-       <small><%= place.photos.last.user.email %></small>  
-       </div>
-       
-      </div>
+     <% if place.user.present? %>
+       <small><%= place.user.email %></small>
+     <% end %>
+
+<% if place.comments.present? %>
+  <div class="col-12">
+   <blockquote>
+    <% if place.comments.last.humanized_rating.present? %>
+      <b><%= place.comments.last.humanized_rating %></b> -
     <% end %>
+    <%= place.comments.last.message %>
+    <small><%= place.comments.last.user.email %></small>
+   </blockquote>
+  </div>
+<% end %>
 
-
-
-    <% if place.comments.present? %>
-      <div class="col-12">
-       <blockquote>
-        <% if place.comments.last.humanized_rating.present? %>
-          <b><%= place.comments.last.humanized_rating %></b> -
-        <% end %>
-        <%= place.comments.last.message %>
-        <small><%= place.comments.last.user.email %></small>
-       </blockquote>
-      </div>
-    <% end %>
 
   </div>
-  <% end %>
+<% end %>
 <div class="container pagination justify-content-center" >
   <%= paginate @places %>
 </div>
