@@ -1,24 +1,29 @@
 # README
+"Un clon de Yelp para recomendar restaurantes" (Nomster) 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 🚀 Tecnologías
 
-Things you may want to cover:
+- **Ruby** 2.5.3
+- **Rails** 5.2.3
+- **Base de datos:** PostgreSQL
+- **Frontend:** Bootstrap, Google Maps API
+- **Autenticación:** Devise
+- **Subida de imágenes:** CarrierWave + Cloudinary (o AWS)
 
-* Ruby version
+## ✨ Funcionalidades principales
 
-* System dependencies
+- [x] Autenticación de usuarios con Devise
+- [x] CRUD de lugares (crear, editar, eliminar reseñas)
+- [x] Búsqueda de lugares por nombre
+- [x] Integración con Google Maps para ubicación
+- [x] Subida de imágenes para cada lugar
+- [x] Sistema de calificación con estrellas
 
-* Configuration
+## 📦 Instalación local
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+git clone https://github.com/tu-usuario/nomster.git
+cd nomster
+bundle install
+rails db:create db:migrate db:seed
+rails server
