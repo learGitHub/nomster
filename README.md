@@ -1,7 +1,7 @@
 # README
 "Un clon de Yelp para recomendar restaurantes" (Nomster) 
 
-## 🚀 Tecnologías
+## Tecnologías
 
 - **Ruby** 2.5.3
 - **Rails** 5.2.3
@@ -10,7 +10,7 @@
 - **Autenticación:** Devise
 - **Subida de imágenes:** CarrierWave + Cloudinary (o AWS)
 
-## ✨ Funcionalidades principales
+## Funcionalidades principales
 
 - [x] Autenticación de usuarios con Devise
 - [x] CRUD de lugares (crear, editar, eliminar reseñas)
@@ -19,7 +19,7 @@
 - [x] Subida de imágenes para cada lugar
 - [x] Sistema de calificación con estrellas
 
-## 📦 Instalación local
+## Instalación local
 
 ```bash
 git clone https://github.com/tu-usuario/nomster.git
